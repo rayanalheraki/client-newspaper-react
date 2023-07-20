@@ -14,7 +14,11 @@ export default function TopHeader() {
       <div className={styles["show-in-small-screen"]}>
         <BsList
           onClick={handleClickList}
-          style={{ fontSize: "32px", color: "var(--secondary-main)" }}
+          style={{
+            fontSize: "32px",
+            color: "var(--secondary-main)",
+            cursor: "pointer",
+          }}
         />
         {showPageList && (
           <div className={clsx(styles["mobile-page-list"], "slide-in-left")}>
