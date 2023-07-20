@@ -1,66 +1,74 @@
 import styles from "./LastesNews.module.css";
 import clsx from "clsx";
 import { Fragment } from "react";
+import { LASTES_DATA } from "@/data/DATA";
+import type { Tweet, News } from "@/types/GeneralTypes";
+
 export default function LastesNews() {
+  const [firstItem, ...otherItems] = LASTES_DATA.news;
   return (
     <div className={styles["grid-container"]}>
-      <ColumnOne />
-      <ColumnTwo />
-      <ColumnThree />
+      <ColumnOne news={firstItem} />
+      <ColumnTwo news={otherItems} />
+      <ColumnThree tweets={LASTES_DATA.tweets} />
     </div>
   );
 }
 
-const ColumnOne = () => {
+/** Component: first column in Lastes News Section  */
+type ColumnOneProps = {
+  news: News;
+};
+const ColumnOne = ({ news }: ColumnOneProps) => {
   return (
     <div className={clsx(styles["grid-item"], styles["column1"])}>
       <div className={clsx(styles["post1-image"])}>
-        <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d" />
-        <div className="badge">Science</div>
+        <img className="card-shadow" src={news.imageSrc} />
+        <div className="badge">{news.category}</div>
       </div>
       <div className={styles["post1-info"]}>
-        <h2>Scientists Discover New Species of Butterfly</h2>
-        <p>
-          Scientists have recently identified a new species of butterfly in the
-          Amazon rainforest scientists have recently identified a new species of
-          butterfly in the Amazon rainforest. scientists have recently
-          identified a new species of butterfly in the Amazon rainforest
-          scientists have recently...
-        </p>
+        <h2>{news.title}</h2>
+        <p>{news.part_of_news}</p>
       </div>
     </div>
   );
 };
 
-const ColumnTwo = () => {
+/** Component: second column in Lastes News Section  */
+type ColumnTwoProps = {
+  news: News[];
+};
+const ColumnTwo = ({ news }: ColumnTwoProps) => {
   return (
     <div className={clsx(styles["grid-item"], styles["column2"])}>
-      {[1, 1, 1].map((_, i) => (
+      {news.map((item, i) => (
         <div key={i} className={clsx(styles["post2-conainer"])}>
-          <img src="https://images.unsplash.com/photo-1637203727700-9d86c74904d6" />
+          <img src={item.imageSrc} />
           <div className={styles["image-gradiant"]}></div>
           <div className={styles["post2-title"]}>
             <div className="badge">Sport</div>
-            <h2>World Cup Finals: Team A Wins in Thrilling Overtime</h2>
+            <h2>{item.title}</h2>
           </div>
         </div>
       ))}
     </div>
   );
 };
-const ColumnThree = () => {
+
+/** Component: Third column in Lastes News Section  */
+type ColumnThreeProps = {
+  tweets: Tweet[];
+};
+const ColumnThree = ({ tweets }: ColumnThreeProps) => {
   return (
     <div className={clsx(styles["grid-item"], styles["column3"])}>
-      {[1, 1, 1, 1].map((_, i) => (
+      {tweets.map((tweet, i) => (
         <Fragment key={i}>
           <div className={styles["post3-container"]}>
-            <img src="https://images.unsplash.com/photo-1557862921-37829c790f19" />
+            <img className="card-shadow" src={tweet.imageSrc} />
             <div className={styles["post3-text"]}>
-              <p>
-                Lorem ipsum dolor sit amet consectetur. Eget suspendisse turpis
-                nunc tristique ut ultrices.
-              </p>
-              <h3>Ahmet Can</h3>
+              <p>{tweet.text}</p>
+              <h3>{tweet.name}</h3>
             </div>
           </div>
           <div className="divider"></div>

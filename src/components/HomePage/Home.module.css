@@ -1,4 +1,4 @@
-.parent {
+.home-page-container {
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 15px;
-  margin: 25px 0;
+  margin: 0 0 30px 0;
 }
 
 .section-header > h2 {

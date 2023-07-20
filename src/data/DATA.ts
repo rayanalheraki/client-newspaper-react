@@ -121,12 +121,67 @@ export const NEWS_DATA = [
   },
 ];
 
+export const LASTES_DATA = {
+  news: [
+    {
+      title: "Scientists Discover New Species of Butterfly",
+      part_of_news:
+        "Scientists have recently identified a new species of butterfly in the Amazon rainforest...",
+      category: "Science",
+      imageSrc: "https://images.unsplash.com/photo-1532094349884-543bc11b234d",
+    },
+    {
+      title: "World Cup Finals: Team A Wins in Thrilling Overtime",
+      part_of_news:
+        "In a nail-biting match, Team A emerged victorious over Team B in the World Cup finals...",
+      category: "Sports",
+      imageSrc: "https://images.unsplash.com/photo-1637203727700-9d86c74904d6",
+    },
+    {
+      title: "Breaking: Major Earthquake Hits Coastal City",
+      part_of_news:
+        "A powerful earthquake measuring 7.5 on the Richter scale struck a coastal city earlier today...",
+      category: "Breaking News",
+      imageSrc: "https://images.unsplash.com/photo-1604480132736-44c188fe4d20",
+    },
+    {
+      title: "New Study Reveals Link Between Exercise and Mental Health",
+      part_of_news:
+        "A comprehensive study conducted by researchers suggests a strong correlation between regular exercise...",
+      category: "Health",
+      imageSrc: "https://images.unsplash.com/photo-1555774698-0b77e0d5fac6",
+    },
+  ],
+  tweets: [
+    {
+      name: "Ahmet Can",
+      text: "Lorem ipsum dolor sit amet consectetur. Eget suspendisse turpis nunc tristique ut ultrices.",
+      imageSrc: "https://images.unsplash.com/photo-1557862921-37829c790f19",
+    },
+    {
+      name: "David Miller",
+      text: "Lorem ipsum dolor sit amet consectetur. Eget suspendisse turpis nunc tristique ut ultrices.",
+      imageSrc: "https://images.unsplash.com/photo-1590086782957-93c06ef21604",
+    },
+    {
+      name: "Ali demir",
+      text: "Lorem ipsum dolor sit amet consectetur. Eget suspendisse turpis nunc tristique ut ultrices.",
+      imageSrc: "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f",
+    },
+    {
+      name: "Andro Jon",
+      text: "Lorem ipsum dolor sit amet consectetur. Eget suspendisse turpis nunc tristique ut ultrices.",
+      imageSrc: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
+    },
+  ],
+};
+
 export const REPORTS_DATA = [
   {
     title: "Scientists Discover New Species of Butterfly",
     date: "July 19 ,2023",
     category: "Science",
-    src: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56",
+    imageSrc: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56",
     link: "#",
   },
   {
@@ -134,14 +189,14 @@ export const REPORTS_DATA = [
     date: "July 19 ,2023",
     category: "Sports",
     link: "#",
-    src: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56",
+    imageSrc: "https://images.unsplash.com/photo-1496412705862-e0088f16f791",
   },
   {
     title: "Breaking: Major Earthquake Hits Coastal City",
     date: "July 19 ,2023",
     category: "Breaking News",
     link: "#",
-    src: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56",
+    imageSrc: "https://images.unsplash.com/photo-1682686578023-dc680e7a3aeb",
   },
 ];
 
@@ -150,7 +205,7 @@ export const WORLD_DATA = [
     title: "Scientists Discover New Species of Butterfly",
     date: "July 19 ,2023",
     category: "Science",
-    src: "https://images.unsplash.com/photo-1531266752426-aad472b7bbf4",
+    imageSrc: "https://images.unsplash.com/photo-1531266752426-aad472b7bbf4",
     link: "#",
   },
   {
@@ -158,13 +213,44 @@ export const WORLD_DATA = [
     date: "July 19 ,2023",
     category: "Sports",
     link: "#",
-    src: "https://images.unsplash.com/photo-1531266752426-aad472b7bbf4",
+    imageSrc: "https://images.unsplash.com/photo-1545341425-ee53bbfd2653",
   },
   {
     title: "Breaking: Major Earthquake Hits Coastal City",
     date: "July 19 ,2023",
     category: "Breaking News",
     link: "#",
-    src: "https://images.unsplash.com/photo-1531266752426-aad472b7bbf4",
+    imageSrc: "https://images.unsplash.com/photo-1646029642262-022158ff5794",
+  },
+];
+
+export const MEDIA_DATA = [
+  {
+    title: "Trump: I believe Secret Service 'know everything' about this",
+    date: "July 19 ,2023",
+    category: "Science",
+    thumbnail: "https://images.unsplash.com/photo-1550531996-ff3dcede9477",
+    link: "#",
+  },
+  {
+    title: "World Cup Finals: Team A Wins in Thrilling Overtime",
+    date: "July 19 ,2023",
+    category: "Sports",
+    link: "#",
+    thumbnail: "https://images.unsplash.com/photo-1496412705862-e0088f16f791",
+  },
+  {
+    title: "A-List Actor's Comeback Film Receives Rave Reviews",
+    date: "July 19 ,2023",
+    category: "Breaking News",
+    link: "#",
+    thumbnail: "https://images.unsplash.com/photo-1496412705862-e0088f16f791",
+  },
+  {
+    title: "A-List Actor's Comeback Film Receives Rave Reviews",
+    date: "July 19 ,2023",
+    category: "General",
+    link: "#",
+    thumbnail: "https://images.unsplash.com/photo-1496412705862-e0088f16f791",
   },
 ];

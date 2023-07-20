@@ -1,27 +1,17 @@
 import SectionHeader from "../SectionHeader";
 import styles from "./Media.module.css";
 import { BsPlayCircleFill } from "react-icons/bs";
+import { MEDIA_DATA } from "@/data/DATA";
+import type { Media } from "@/types/GeneralTypes";
 
-type IProps = {
-  data: {
-    title: string;
-    category: string;
-    link: string;
-    date: string;
-    src: string;
-  }[];
-  title: string;
-  pageLink?: string;
-};
-
-export default function Media({ data, title, pageLink = "#" }: IProps) {
-  const [firstItem, ...otherItems] = data;
+export default function Media() {
+  const [firstItem, ...otherItems] = MEDIA_DATA;
   return (
     <div>
-      <SectionHeader title={title} withSeeAll seeAllLink={pageLink} />
+      <SectionHeader title="Media" withSeeAll />
       <div className={styles["grid-container"]}>
         <div className={styles["grid-main-item"]}>
-          <img src={firstItem.src} />
+          <img className="card-shadow" src={firstItem.thumbnail} />
           <div className={styles["image-gradiant"]}>
             <BsPlayCircleFill className={styles["play-icon"]} />
           </div>
@@ -35,7 +25,7 @@ export default function Media({ data, title, pageLink = "#" }: IProps) {
           {otherItems.map((item, i) => (
             <div key={i} className={styles["mini-video-cart"]}>
               <div className={styles["mini-cart-image"]}>
-                <img src={item.src} />
+                <img className="card-shadow" src={item.thumbnail} />
                 <div className={styles["image-gradiant"]}>
                   <BsPlayCircleFill className={styles["play-icon"]} />
                 </div>

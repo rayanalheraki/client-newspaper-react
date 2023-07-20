@@ -11,6 +11,16 @@
   box-sizing: border-box;
   height: 80px;
 }
+.mobile-page-list {
+  box-sizing: border-box;
+  z-index: 1050;
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  top: 80px;
+  min-height: calc(100vh - 80px);
+  background-color: var(--primary-main);
+}
 
 .logo {
   line-height: 0;
@@ -28,7 +38,7 @@
   width: 247px;
   height: 36px;
   border: 1px solid var(--primary-light);
-  border-radius: 6px;
+  border-radius: var(--border-radius-main);
 }
 
 .search-input {

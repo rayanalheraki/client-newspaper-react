@@ -7,7 +7,7 @@ import { REPORTS_DATA, WORLD_DATA } from "@/data/DATA";
 import Media from "./Media";
 export default function index() {
   return (
-    <div className={clsx(styles["parent"])}>
+    <div className={clsx(styles["home-page-container"])}>
       {/* lastes news */}
       <LastesNews />
 
@@ -23,7 +23,7 @@ export default function index() {
       <SectionThreeItems title="World" data={WORLD_DATA} pageLink="#" />
 
       {/* Media */}
-      <Media title="Media" data={WORLD_DATA} pageLink="#" />
+      <Media />
     </div>
   );
 }

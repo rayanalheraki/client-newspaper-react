@@ -18,9 +18,9 @@
   color: var(--placeholder);
 }
 .grid-item > p {
-  font-size: 16px;
-
-  color: #9c9c9c;
+  font-size: 18px;
+  line-height: 1.4;
+  color: var(--black);
 }
 
 .column-divider {
