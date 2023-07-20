@@ -10,6 +10,7 @@
   padding: 20px 0;
   box-sizing: border-box;
   height: 80px;
+  border-bottom: 5px solid var(--primary-main);
 }
 .mobile-page-list {
   box-sizing: border-box;
@@ -142,6 +143,9 @@
 @media (min-width: 640px) {
   .show-in-small-screen {
     display: none;
+  }
+  .top-header {
+    border-bottom: none;
   }
   .search-box {
     display: flex;
