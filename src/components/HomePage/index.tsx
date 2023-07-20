@@ -1,7 +1,10 @@
 import clsx from "clsx";
 import styles from "./Home.module.css";
 import LastesNews from "./LastesNews";
-
+import EditorsPicks from "./EditorsPicks";
+import SectionThreeItems from "./SectionThreeItems";
+import { REPORTS_DATA, WORLD_DATA } from "@/data/DATA";
+import Media from "./Media";
 export default function index() {
   return (
     <div className={clsx(styles["parent"])}>
@@ -9,16 +12,18 @@ export default function index() {
       <LastesNews />
 
       {/* EDITORS' PICKS */}
-      <div>EDITORS' PICKS</div>
+      <EditorsPicks />
 
       {/* New Report */}
-      <div>New Report</div>
 
       {/* Reports */}
-      <div>Reports</div>
+      <SectionThreeItems title="Reports" data={REPORTS_DATA} pageLink="#" />
+
+      {/* World */}
+      <SectionThreeItems title="World" data={WORLD_DATA} pageLink="#" />
 
       {/* Media */}
-      <div>Media</div>
+      <Media title="Media" data={WORLD_DATA} pageLink="#" />
     </div>
   );
 }
