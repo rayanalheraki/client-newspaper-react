@@ -1,11 +1,19 @@
 :root {
-  --primary-main: #326789;
+  /* --primary-main: #326789;
   --primary-light: #78a6c8;
   --primary-dark: #093552;
 
   --secondary-main: #e65c4f;
   --secondary-light: #ff8a80;
-  --secondary-dark: #b6362a;
+  --secondary-dark: #b6362a; */
+
+  --secondary-main: #272727;
+  --secondary-light: #5b5b5b;
+  --secondary-dark: #191919;
+
+  --primary-main: #cf1d39;
+  --primary-light: #d05769;
+  --primary-dark: #a5192e;
 
   --bg-main: #e9eef2;
   --black-main: #252525;

@@ -36,7 +36,7 @@
 }
 .post1-info > h2 {
   font-size: 20px;
-  color: var(--primary-dark);
+  color: var(--secondary-main);
 }
 
 .post1-info > p {
@@ -120,7 +120,7 @@
 
 .post3-text > p {
   font-size: 14px;
-  color: var(--primary-dark);
+  color: var(--secondary-main);
 }
 .post3-text > h3 {
   font-size: 14px;
