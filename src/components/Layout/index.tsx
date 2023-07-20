@@ -2,6 +2,7 @@ import clsx from "clsx";
 import styles from "./Layout.module.css";
 import { ReactNode } from "react";
 import Header from "./Header";
+import Footer from "./Footer";
 
 type IProps = {
   children: ReactNode;
@@ -16,7 +17,7 @@ export default function Layout({ children }: IProps) {
           {children}
         </div>
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
