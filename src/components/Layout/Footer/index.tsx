@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Footer.module.css";
 import clsx from "clsx";
 export default function Footer() {
