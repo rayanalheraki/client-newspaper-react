@@ -5,6 +5,7 @@ import EditorsPicks from "./EditorsPicks";
 import SectionThreeItems from "./SectionThreeItems";
 import { REPORTS_DATA, WORLD_DATA } from "@/data/DATA";
 import Media from "./Media";
+import Parties from "./Parties";
 export default function index() {
   return (
     <div className={clsx(styles["home-page-container"])}>
@@ -24,6 +25,9 @@ export default function index() {
 
       {/* Media */}
       <Media />
+
+      {/* Parties */}
+      <Parties />
     </div>
   );
 }
