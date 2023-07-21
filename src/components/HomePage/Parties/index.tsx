@@ -43,17 +43,23 @@ export default function Parties() {
           )}
           onClick={() => handleClickTab("other")}
         >
-          People's
+          Other
           <br />
           <span>Parties</span>
         </button>
       </div>
-      <TabContent />
+      {selectedTab === "peoples" && <PeopleContent />}
+      {selectedTab === "nations" && (
+        <div className={styles["tabs-content"]}>No Content yet</div>
+      )}
+      {selectedTab === "other" && (
+        <div className={styles["tabs-content"]}>No Content yet</div>
+      )}
     </div>
   );
 }
 
-const TabContent = () => {
+const PeopleContent = () => {
   return (
     <div className={styles["tabs-content"]}>
       <p>
@@ -86,7 +92,7 @@ const TabContent = () => {
           </div>
         </div>
         <div className={styles.party}>
-          <img src="https://logowik.com/content/uploads/images/458_akparti.jpg" />
+          <img src="https://i.dha.com.tr/i/dha/75/0x410/6163115045d2a06a3ce183dd.jpg" />
           <div className={styles["party-text"]}>
             <h3>BBP PARTY</h3>
             <h4>MUSTAFA DESTICI</h4>
